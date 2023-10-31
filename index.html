@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de números telefônicos</h1>
+
+        </header>
+        <div class="main">
+            <p>insira os dados solicitados.</p>
+
+            <div class="data">
+                <div >
+                    <form onsubmit="addContact(); return false;" id="form-inputs">
+                        <input type="text" id="input-nome" required placeholder="Digite seu nome" />
+                        <input type="tel" id="input-telefone" required placeholder="Digite seu número">
+                        <button type="submit"><b>Cadastrar</b></button>
+                        <button type="reset">Limpar campos</button>
+                    </form>
+                </div>
+
+
+                <div class="content-table">
+
+                    <table border="1" id="table1">
+                        <thead>
+                            <tr class="center">
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                            </tr>
+                        </thead>
+
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
